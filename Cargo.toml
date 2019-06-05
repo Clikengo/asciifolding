@@ -1,7 +1,7 @@
 [package]
 name = "asciifolding"
-version = "0.1.0"
-authors = ["Mustafa Paltun <mpaltun@gmail.com>"]
+version = "0.1.1"
+authors = ["Mustafa Paltun <mpaltun@gmail.com>", "Vincent Rouillé <v.rouille@clikengo.com>"]
 description = "ascii folding library"
 keywords = ["ascii", "folding", "lucene", "unicode"]
 repository = "https://github.com/mpaltun/asciifolding"
@@ -10,3 +10,10 @@ license = "Apache-2.0"
 edition = "2018"
 
 [dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "bench"
+harness = false
